@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABO - Banco De Sangre</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+
+    <body>
+        <div class="uk-position-top uk-animation-fade" id="top">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-light" data-uk-navbar="dropbar: false;"
+                data-uk-sticky="animation: uk-animation-slide-top; 
+                                sel-target: .uk-navbar-container; 
+                                cls-active: uk-navbar-sticky; 
+                                cls-inactive: uk-navbar-transparent uk-light; top: 0">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: heart; ratio: 1"></span>BANCO DE SANGRE</a>
+                <ul class="uk-navbar-nav uk-visible@m">
+                <li class="uk-active"><a href="#">INICIO</a></li>
+                <li>
+                    <a href="#">DONACION</a>
+                    <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: star; ratio:0.5"></span>Dona - se un heroe!</a></li>
+                        <li><a href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: star; ratio:0.5"></span> Nuestros Procesos</a></li>
+                    </ul>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <!-- social icons - hide on mobile -->
+            <div class="uk-navbar-right">
+                <div class="uk-navbar-item  uk-visible@m">
+                <a uk-tooltip="title: Correo; pos: bottom-center" title="Correo" href="" class="uk-icon-button  uk-margin-small-right" uk-icon="mail"></a>
+                <a uk-tooltip="title: Facebook; pos: bottom-center" title="Facebook" href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                <a uk-tooltip="title: Whatsapp; pos: bottom-center" title="Whatsapp" href="" class="uk-icon-button  uk-margin-small-right" uk-icon="whatsapp"></a>
+                </div>
+            </div>
+            <!--off-canvas trigger hamburger btn. show only on mobile -->
+            <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+            </a>
+            </div>
+            </nav>
+            <nav id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: push; flip: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                  
+                  <a class="uk-align-left uk-logo" href="#"><span class="uk-icon uk-margin-small-right" uk-icon="icon: heart; ratio: 1"></span> Banco de Sangre</a>
+                  
+                  <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                    <li class="uk-active"><a href="#">INICIO</a></li>
+                    <li class="uk-parent">
+                      <a href="#">DONACION</a>
+                      <ul class="uk-nav-sub">
+                        <li><a href="#"><span uk-icon="icon: star; ratio:0.5"></span> Dona - se un heroe!</a></li>
+                        <li><a href="#"><span uk-icon="icon: star; ratio:0.5"></span> Nuestros Procesos</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <footer class="uk-margin-large-top">
+                    <hr>
+                    <span uk-icon="icon: phone"></span>
+                    <a class="uk-link-text" href="#">+502 4714 0954</a>
+                  </footer>
+                </div>
+              </nav>
+        </div>
+
+
+        
+        <header id="hero-header">
+            <div class="uk-section-secondary">
+            <div id="abo_back" class="uk-background-norepeat uk-background-cover uk-background-center-center  uk-section uk-section-large uk-flex uk-flex-middle" uk-parallax="bgx: 0,-60" data-uk-height-viewport="offset-top: false" style="background: linear-gradient(to right, rgba(133, 4, 4, 0.9), rgba(253, 48, 48, 0.234)), url('https://scontent.fgua3-2.fna.fbcdn.net/v/t1.0-9/118800272_378557313544422_8298919815401295125_o.jpg?_nc_cat=107&ccb=2&_nc_sid=e3f864&_nc_ohc=QQOuov7tFDkAX-9NLZJ&_nc_ht=scontent.fgua3-2.fna&oh=fc18de663febb80e4eb3cfc5ad85a4fd&oe=5FE2398E');">
+                <div class="uk-width-1-1">
+                <div class="uk-container uk-container-large">
+                    <h1 class="uk-margin-small uk-margin-medium-top uk-width-large@m uk-text-left@m uk-text-center uk-h6 uk-heading-line" data-uk-parallax="opacity: 1,0;viewport: 0.95;media: @s">
+                    
+                    <span>Certeza y Seguridad en Cada Unidad</span>
+                    </h1>
+                    <h4 class="uk-margin-small uk-text-left@m uk-text-center uk-heading-small" 
+                        data-uk-parallax="y: 0,60;opacity: 1,0; easing: 0.8;viewport: 0.95;media: @s">
+                    ABO - BANCO DE SANGRE
+                    </h4>
+                    
+                    <div class="uk-margin uk-text-left@m uk-text-center" data-uk-parallax="y: 0,450;opacity: 1,0;easing: 0.3;target: !.uk-section;media: @s">
+                    <a uk-icon="icon: arrow-down;ratio: 1.5" class="uk-icon-link uk-icon" href="#main" data-uk-scroll="offset: 100"></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </header>
+        
+        <main id="main" class="uk-container uk-container-large uk-margin-top uk-section uk-section-light">
+                        
+            <br>
+            <h1 class="uk-heading-medium">Quienes Somos!!!</h1>
+            <br>
+            <hr>
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-animation-fade" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="images/sample.png" alt="" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Mision</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet fringilla molestie. Mauris ante massa, iaculis eget sapien in, tincidunt porta turpis. Integer ac leo nisi. Praesent id tortor vel ante convallis auctor eu cursus ipsum. Nullam porttitor augue in sagittis finibus. Pellentesque a augue eros. Vestibulum venenatis imperdiet neque id auctor. Suspendisse dignissim sit amet arcu blandit fringilla. Vivamus gravida nisi ac tellus elementum pharetra. Sed pretium sapien at metus varius scelerisque. Nunc sodales, dui nec malesuada tincidunt, nisi nunc tincidunt massa, quis hendrerit ipsum ex in ligula. Suspendisse id nisl iaculis, vestibulum odio vel, fringilla nunc. Maecenas nec erat sed mauris vulputate congue. Integer ultricies tempus velit eu scelerisque. Pellentesque lacinia dui risus, eu maximus purus commodo ut. Curabitur finibus efficitur posuere. Morbi neque tortor, lobortis quis dolor id, ultricies porttitor mi. Sed luctus accumsan mauris.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-animation-fade" uk-grid>
+                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                    <img src="images/sample.png" alt="" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Vision</h3>
+                        <p>Vivamus gravida nisi ac tellus elementum pharetra. Sed pretium sapien at metus varius scelerisque. Nunc sodales, dui nec malesuada tincidunt, nisi nunc tincidunt massa, quis hendrerit ipsum ex in ligula. Suspendisse id nisl iaculis, vestibulum odio vel, fringilla nunc. Maecenas nec erat se</p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <a uk-icon="icon: arrow-up;ratio: 2" class="uk-icon-link uk-icon" href="#top" uk-scroll="">Volver al inicio</a>
+        
+        </main>
+    </body>
+</html>
